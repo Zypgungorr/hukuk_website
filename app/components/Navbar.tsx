@@ -16,9 +16,7 @@ export default function Navbar() {
           <Link href="/hizmetlerimiz" className="text-gray-600 hover:text-gray-900">Hizmetlerimiz</Link>
           <Link href="/ekibimiz" className="text-gray-600 hover:text-gray-900">Ekibimiz</Link>
           <Link href="/kariyer" className="text-gray-600 hover:text-gray-900">Kariyer</Link>
-          <Link href="/uluslararasi-masalar" className="text-gray-600 hover:text-gray-900">Uluslararası Masalar</Link>
-          <Link href="/haberler-ve-makaleler" className="text-gray-600 hover:text-gray-900">Haberler ve Makaleler</Link>
-          <Link href="/akademi" className="text-gray-600 hover:text-gray-900">Akademi</Link>
+          <Link href="/haberlerVeMakaleler" className="text-gray-600 hover:text-gray-900">Haberler ve Makaleler</Link>
           <Link href="/iletisim" className="text-gray-600 hover:text-gray-900">İletişim</Link>
         </div>
 
