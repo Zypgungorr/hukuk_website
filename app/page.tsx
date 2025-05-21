@@ -4,9 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      
+    <div className="min-h-screen bg-white">      
       {/* Hero Section */}
       <section className="relative h-[80vh] bg-gray-100">
         <div className="absolute inset-0 bg-black/40 z-10"></div>
