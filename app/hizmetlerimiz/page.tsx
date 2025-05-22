@@ -6,19 +6,19 @@ export default function Services() {
     <div className="min-h-screen bg-white">
 
       {/* Hero Section */}
-      <section className="relative py-16 md:py-20 lg:py-28 bg-white">
+      <section className="relative py-16 md:py-20 lg:py-28 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-4 md:mb-6 text-[#9B1B30]">Çalışma Alanlarımız</h1>
             <p className="text-lg md:text-xl font-light text-gray-600">
-              Aksan, küresel gelişmeler doğrultusunda gelişen departmanlardan oluşan özel bölümlere ev sahipliği yapmaktadır.
+              Gedikli Hukuk, küresel gelişmeler doğrultusunda gelişen departmanlardan oluşan özel bölümlere ev sahipliği yapmaktadır.
             </p>
           </div>
         </div>
       </section>
 
       {/* Practice Areas Grid */}
-      <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+      <section className="py-12 md:py-16 lg:py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
             {/* Şirketler Hukuku */}

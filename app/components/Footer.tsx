@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <div>
-              <h3 className="text-xl font-light mb-4">AKSAN</h3>
+              <h3 className="text-xl font-light mb-4">Gedikli Hukuk</h3>
               <p className="text-gray-400 text-sm">
                 1990'dan beri hukuk alanında öncü ve yenilikçi çözümler sunuyoruz.
               </p>
@@ -32,12 +32,12 @@ export default function Footer() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li>İstanbul, Türkiye</li>
                 <li>+90 (212) XXX XX XX</li>
-                <li>info@aksan.av.tr</li>
+                <li>info@gedikli.av.tr</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
-            <p>© 2025 AKSAN. Tüm hakları saklıdır.</p>
+            <p>© 2025 Gedikli Hukuk. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>

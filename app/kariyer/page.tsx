@@ -11,7 +11,7 @@ export default function Kariyer() {
               Kariyer
             </h1>
             <p className="text-base md:text-lg font-light text-gray-600 mb-0 text-center md:text-left">
-              AKSAN ailesi olarak, yetenekli ve tutkulu hukukçuları aramıza katılmaya davet ediyoruz.
+              Gedikli Hukuk ailesi olarak, yetenekli ve tutkulu hukukçuları aramıza katılmaya davet ediyoruz.
             </p>
           </div>
         </div>
@@ -23,11 +23,11 @@ export default function Kariyer() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             {/* Career Information */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Neden AKSAN?</h2>
+              <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-6">Neden Gedikli Hukuk?</h2>
               
               <div className="space-y-6 text-gray-600">
                 <p>
-                  AKSAN Hukuk Bürosu olarak, hukuki çözümler sunma konusundaki tutkumuz ve kararlılığımızla, 
+                  Gedikli Hukuk Bürosu olarak, hukuki çözümler sunma konusundaki tutkumuz ve kararlılığımızla, 
                   sektörde öncü konumumuzu sürdürüyoruz. Müvekkillerimizin ihtiyaçlarına özel çözümler 
                   sunarken, ekibimizin gelişimine ve mesleki tatminine de büyük önem veriyoruz.
                 </p>
@@ -212,7 +212,7 @@ export default function Kariyer() {
                       type="text" 
                       id="first-name" 
                       name="first-name" 
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                     />
                   </div>
                   <div>
@@ -221,7 +221,7 @@ export default function Kariyer() {
                       type="text" 
                       id="last-name" 
                       name="last-name" 
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                     />
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export default function Kariyer() {
                     type="email" 
                     id="email" 
                     name="email" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                   />
                 </div>
                 
@@ -242,7 +242,7 @@ export default function Kariyer() {
                     type="tel" 
                     id="phone" 
                     name="phone" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                   />
                 </div>
                 
@@ -251,7 +251,7 @@ export default function Kariyer() {
                   <select 
                     id="position" 
                     name="position" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                   >
                     <option value="">Seçiniz</option>
                     <option value="senior-attorney">Kıdemli Avukat - Şirketler Hukuku</option>
@@ -266,7 +266,7 @@ export default function Kariyer() {
                   <select 
                     id="experience" 
                     name="experience" 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                   >
                     <option value="">Seçiniz</option>
                     <option value="0-1">0-1 Yıl</option>
@@ -282,7 +282,7 @@ export default function Kariyer() {
                     id="message" 
                     name="message" 
                     rows={4} 
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#9B1B30] focus:border-[#9B1B30] focus:outline-none text-black"
                     placeholder="Kendiniz ve kariyeriniz hakkında kısa bir bilgi veriniz."
                   ></textarea>
                 </div>
@@ -334,5 +334,5 @@ export default function Kariyer() {
       </section>
     </div>
   );
-}
+  }
   
