@@ -1,24 +1,28 @@
+'use client'
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <nav className="w-full px-6 py-4 border-b bg-white z-50 relative">
+    <nav className="w-full px-6 py-4 border-b bg-white z-50 sticky top-0">
       <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <span className="text-2xl font-light tracking-wider">AKSAN</span>
         </Link>
 
-        {/* Navigation Links */}
+        {/* Navigation Links - Desktop Only */}
         <div className="hidden lg:flex items-center space-x-8">
-          {/* Hizmetlerimiz + Dropdown */}
           <Link href="/hakkimizda" className="text-gray-600 hover:text-gray-900">Hakkımızda</Link>
 
           <div className="relative group">
-            <button className="text-gray-600 hover:text-gray-900 focus:outline-none">
-              Hizmetlerimiz
+            <button>
+              <Link href="/hizmetlerimiz" className="text-gray-600 hover:text-gray-900">Hizmetlerimiz</Link>
             </button>
 
+            {/* Dropdown - Only visible on desktop */}
             <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200">
               <ul className="flex flex-col">
                 <li>
@@ -54,13 +58,79 @@ export default function Navbar() {
         {/* Right Side */}
         <div className="flex items-center space-x-4">
           <button className="text-gray-600 hover:text-gray-900">TR</button>
-          <button className="text-gray-600 hover:text-gray-900">
+          
+          {/* Mobile menu toggle button */}
+          <button 
+            className="text-gray-600 hover:text-gray-900 lg:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} 
+              />
             </svg>
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu - Only shown when mobileMenuOpen is true */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden px-4 pt-4 pb-6 border-t border-gray-200 mt-4">
+          <div className="flex flex-col space-y-3">
+            <Link 
+              href="/hakkimizda" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Hakkımızda
+            </Link>
+            
+            {/* Mobile version of Hizmetlerimiz - no dropdown */}
+            <Link 
+              href="/hizmetlerimiz" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Hizmetlerimiz
+            </Link>
+            
+            <Link 
+              href="/ekibimiz" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Ekibimiz
+            </Link>
+            
+            <Link 
+              href="/kariyer" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Kariyer
+            </Link>
+            
+            <Link 
+              href="/haberlerVeMakaleler" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Haberler ve Makaleler
+            </Link>
+            
+            <Link 
+              href="/iletisim" 
+              className="text-gray-600 hover:text-gray-900 py-2"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              İletişim
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }

@@ -19,6 +19,7 @@ const team = [
 
 export default function EkibimizPage() {
     return (
+      <div>
         <section className="py-20 bg-white">
             <div className="text-center mb-12">
                 <h1 className="text-4xl font-bold text-rose-800 mb-4">Ekibimiz</h1>
@@ -32,5 +33,7 @@ export default function EkibimizPage() {
                 ))}
             </div>
         </section>
+        </div>
+
     );
 }
