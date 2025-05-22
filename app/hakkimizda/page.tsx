@@ -133,16 +133,14 @@ export default function About() {
                 className="w-full aspect-square"
               >
                 {/* Klasik bina çizimi */}
-                <div className="border-2 border-white p-4 md:p-8">
-                  <svg viewBox="0 0 200 200" className="w-full h-full stroke-current fill-none">
-                    <path d="M60,180 L60,40 L140,40 L140,180" strokeWidth="2"/>
-                    <path d="M50,40 L150,40" strokeWidth="2"/>
-                    <path d="M80,180 L80,60 L120,60 L120,180" strokeWidth="2"/>
-                    <path d="M90,100 L110,100" strokeWidth="2"/>
-                    <path d="M90,120 L110,120" strokeWidth="2"/>
-                    <path d="M90,140 L110,140" strokeWidth="2"/>
-                    <path d="M90,160 L110,160" strokeWidth="2"/>
-                  </svg>
+                <div className="p-4 md:p-8">
+                  <Image 
+                    src="/images/tasarım.png" 
+                    alt="tasarım" 
+                    width={300} 
+                    height={400}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </motion.div>
             </motion.div>

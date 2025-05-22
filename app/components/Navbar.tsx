@@ -22,8 +22,8 @@ export default function Navbar() {
   }, []);
 
   return (
-<nav className="w-full px-6 py-4 border-b bg-white z-50 sticky top-0 transition-all duration-300">
-<div className="max-w-[1400px] mx-auto flex items-center justify-between">
+    <nav className="w-full px-6 py-4 border-b bg-white z-50 sticky top-0">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-10 flex-shrink-0" onClick={() => setMobileMenuOpen(false)}>
           <div className="flex items-center">
