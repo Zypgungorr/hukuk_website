@@ -1,21 +1,15 @@
+'use client'
 import Image from 'next/image';
+import PageHeaderCard from '../components/PageHeaderCard';
 
 export default function Kariyer() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Title */}
-      <section className="relative py-12 md:py-16 lg:py-20 bg-gray-50">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 text-[#9B1B30] text-center md:text-left">
-              Kariyer
-            </h1>
-            <p className="text-base md:text-lg font-light text-gray-600 mb-0 text-center md:text-left">
-              Gedikli Hukuk ailesi olarak, yetenekli ve tutkulu hukukçuları aramıza katılmaya davet ediyoruz.
-            </p>
-          </div>
-        </div>
-      </section>
+      <PageHeaderCard 
+        title="Kariyer"
+        description="Gedikli Hukuk ailesi olarak, yetenekli ve tutkulu hukukçuları aramıza katılmaya davet ediyoruz."
+      />
 
       {/* Main Career Content */}
       <section className="py-12 md:py-16 lg:py-20">
@@ -334,5 +328,5 @@ export default function Kariyer() {
       </section>
     </div>
   );
-  }
+}
   
