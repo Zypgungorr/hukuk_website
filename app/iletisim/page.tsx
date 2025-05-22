@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import PageHeaderCard from '../components/PageHeaderCard';
 
 // Animation variants
 const fadeInUp = {
@@ -9,7 +10,7 @@ const fadeInUp = {
     opacity: 1, 
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.5,
       ease: "easeOut"
     }
   }
@@ -30,7 +31,7 @@ const fadeIn = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.6
+      duration: 0.5
     }
   }
 };
@@ -39,38 +40,10 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Title */}
-      <motion.section 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative py-12 md:py-16 lg:py-20 bg-gray-50"
-      >
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 text-[#9B1B30] text-center md:text-left"
-            >
-              İletişim
-            </motion.h1>
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-base md:text-lg font-light text-gray-600 mb-0 text-center md:text-left"
-            >
-              Hukuki danışmanlık için bize ulaşın, size en iyi çözümleri sunalım.
-            </motion.p>
-          </motion.div>
-        </div>
-      </motion.section>
+      <PageHeaderCard 
+        title="İletişim"
+        description="Hukuki danışmanlık için bize ulaşın, size en iyi çözümleri sunalım."
+      />
 
       {/* Contact Content */}
       <motion.section 
