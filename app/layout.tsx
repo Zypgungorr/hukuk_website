@@ -3,8 +3,8 @@ import { Libre_Baskerville, Source_Sans_3 } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"; // 👈 ekledik
 
-// Font tanımlamaları
 const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -31,10 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
-      <body className="antialiased font-body" suppressHydrationWarning>
-        <Navbar /> {/* Tüm sayfalarda görünmesini sağlayan kısım */}
+<body className="antialiased font-body bg-white" suppressHydrationWarning>
+<Navbar />
         {children}
-        <Footer/>
+        <ScrollToTop /> {/* 👈 Buraya eklendi */}
+        <Footer />
       </body>
     </html>
   );

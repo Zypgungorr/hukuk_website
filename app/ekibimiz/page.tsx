@@ -28,9 +28,9 @@ const staggerContainer = {
 
 const team = [
     {
-        name: "Şura Karaali",
-        title: "Frontend Stajyeri",
-        imageSrc: "/image/law.png",
+        name: "Aslı Erdem",
+        title: "Avukat",
+        imageSrc: "/images/law.png",
         linkedinUrl: "https://linkedin.com/in/surakaraali"
     },
     {
